@@ -63,14 +63,14 @@ export default function AnalyticCard() {
             <div key={index} className="flex flex-col gap-2.5 cursor-pointer rounded-lg shadow-sm transition-all duration-300 p-3 px-2 w-full hover:bg-[#F6F6F6] bg-[#FFFFFF] border border-[#E2E2E2]">
 
               <div className='flex flex-col gap-1'>
-                <CardSVGs type={item.IconName} className='h-7 w-7 flex-none' />
+                <CardSVGs type={item.IconName} className='h-6 w-6 flex-none' />
                 <span className='text-sm whitespace-nowrap opacity-60'>{item.name}</span>
               </div>
               
               <div className="flex items-center w-full justify-between">
                 <span className="font-bold text-2xl">{item.type === 'number' ? helper.formatNumber(item.count, 0) : `${CURRENCY.NAIRA}${helper.checkCount(item.count)}`}</span>
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 items-center">
                   {
                     item.status === 'warning' ?
                     <CardSVGs type="Caution" className="" /> 
@@ -80,7 +80,7 @@ export default function AnalyticCard() {
                       <span>{item.percent}</span>
                     </div>
                   }
-                  <span className={`text-xs opacity-55 ${item.status === 'warning' ? 'text-[#E78020]' : ''}`}>{item.text}</span>
+                  <span className={`text-xs opacity-75 ${item.status === 'warning' ? 'text-[#E78020]' : ''}`}>{item.text}</span>
                 </div>
               </div>
             </div>

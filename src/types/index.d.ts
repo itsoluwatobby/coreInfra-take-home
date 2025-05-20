@@ -1,6 +1,8 @@
-// Type definitions for the application
 
-interface DashboardContextType {
-  appName: AppConfig;
-  setAppName: React.Dispatch<React.SetStateAction<any>>;
+type Status = 'Ready' | 'In Progress' | 'Acknowledged' | 'Pending';
+type CardStatusProps = {
+  branch: string,
+  cardType: string,
+  quantity: number,
+  status: Status,
 }

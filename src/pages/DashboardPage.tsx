@@ -3,7 +3,7 @@ import Layout from '../components/layout/Layout';
 import {
   AnalyticCard,
   CardStatusDistribution,
-  MonthlyInsurance,
+  MonthlyIssuance,
   QuickAccess,
   RecentCardRequests,
   UserInfo,
@@ -25,8 +25,8 @@ const DashboardPage: React.FC = () => {
 
         <AnalyticCard />
 
-        <div>
-          <MonthlyInsurance />
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 transition-all duration-300'>
+          <MonthlyIssuance />
           
           <RecentCardRequests />
           

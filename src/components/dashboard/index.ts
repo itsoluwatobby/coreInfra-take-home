@@ -4,12 +4,12 @@ import AnalyticCard from './AnalyticCard';
 import CardStatusDistribution from './CardStatusDistribution';
 import RecentCardRequests from './RecentCardRequests';
 import WeeklyIncome from './WeeklyIncome';
-import MonthlyInsurance from './MonthlyInsurance';
+import MonthlyIssuance from './MonthlyIssuance';
 
 export {
   AnalyticCard,
   CardStatusDistribution,
-  MonthlyInsurance,
+  MonthlyIssuance,
   RecentCardRequests,
   QuickAccess,
   UserInfo,

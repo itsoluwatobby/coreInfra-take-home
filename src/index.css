@@ -4,14 +4,82 @@
 
 @font-face {
   font-family: 'Satoshi-Black';
-  src: url('./fonts/Satoshi-Black.otf') format('truetype');
-  font-weight: normal;
+  src: url('./fonts/Satoshi-Light.otf') format('truetype');
+  font-weight: 300;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/Satoshi-LightItalic.otf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/Satoshi-Regular.otf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/Satoshi-Italic.otf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/Satoshi-Medium.otf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/Satoshi-MediumItalic.otf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/Satoshi-Black.otf') format('truetype');
+  font-weight: 600; /* Semibold */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/Satoshi-BlackItalic.otf') format('truetype');
+  font-weight: 600; /* Semibold */
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/Satoshi-Bold.otf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./fonts/Satoshi-BoldItalic.otf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: italic;
+  font-display: swap;
 }
 
 body {
   animation: fadeIn 1s ease-in-out;
-  /* font-family: 'Satoshi-Black', sans-serif; */
+  font-family: 'Satoshi-Black', sans-serif;
 }
 
 @keyframes fadeIn {

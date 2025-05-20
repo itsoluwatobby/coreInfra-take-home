@@ -8,24 +8,26 @@ const Header: React.FC = () => {
       <nav className="w-full flex items-center justify-between px-3 py-2">
 
         <div className='flex items-center cursor-default gap-3 text-xs text-[#001735]'>
-          <SVGIcon type="Dashboard" />
+          <SVGIcon type="Dashboard" className='stroke-[#001735]' />
           <span>Dashboard</span>
         </div>
 
-        <div className='flex items-center w-[19.875rem] gap-4'>
+        <div className='flex items-center w-[19.875rem] justify-between'>
 
-          <div className='rounded-2xl border border-gray-300 bg-white flex items-center gap-2 p-2 h-8'>
+          <div className='rounded-2xl w-[13.4rem] border border-gray-300 bg-white flex items-center gap-2 p-2 h-8'>
             <SVGIcon type="Search" className='size-3 flex-none' />
             <input
               type='search'
               placeholder='search'
-              className='border-none h-7 flex-auto bg-white rounded-r-2xl pb-1 text-black placeholder:text-xs'
+              className='border-none focus:outline-none focus:ring-0 text-sm h-7 flex-auto bg-white rounded-r-2xl pb-1 text-black placeholder:text-xs'
             />
           </div>
 
-          <SVGIcon type="Bell" className='h-5 w-5 flex-none cursor-pointer' />
+          <div className='flex items-center gap-6'>
+            <SVGIcon type="Bell" className='h-5 w-5 flex-none cursor-pointer' />
 
-          <SVGIcon type="Person" className='h-[26px] w-[22.8px] flex-none cursor-pointer bg-gray-100 rounded-full p-1' />
+            <SVGIcon type="Person" className='h-[26px] w-[26px] flex-none cursor-pointer bg-gray-100 rounded-full p-1.5' />
+          </div>
 
         </div>
       </nav>

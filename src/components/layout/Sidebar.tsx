@@ -11,7 +11,7 @@ export default function Sidebar() {
 
         <div className="flex flex-col gap-3 transition-all duration-300">
           
-          <TabButton name="Dashboard" classes="text-[#001735] border border-[#E2E2E2] bg-[#F6F6F6]" textClasses="max-sm:hidden" />
+          <TabButton name="Dashboard" classes="text-[#014DAF] border border-[#E2E2E2] bg-[#F6F6F6]" textClasses="max-sm:hidden" />
           
           <span className="text-[9px] text-[##7E8B9C] ml-2">MAIN MENU</span>
           <ul className="list-none flex flex-col gap-3">
