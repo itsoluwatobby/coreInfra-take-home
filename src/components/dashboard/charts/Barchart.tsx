@@ -83,7 +83,7 @@ export default function BarchartDiagram() {
           }}
         >
           <CartesianGrid strokeDasharray="3 0" vertical={false} stroke='#F2F4F7' />
-          <XAxis dataKey="name" tickLine={false} stroke='#FF' fontSize={13} color='red' />
+          <XAxis dataKey="name" tickLine={false} stroke='#FF' fontSize={13} />
           <YAxis tickLine={false} axisLine={false} fontSize={13} />
           <Tooltip />
           <Bar dataKey="Personalized" radius={[0, 0, 0, 0]} stackId="a" fill="#014DAF" />
