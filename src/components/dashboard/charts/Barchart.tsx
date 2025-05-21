@@ -7,6 +7,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts';
+import { } from 'react';
 
 export default function BarchartDiagram() {
 
@@ -68,8 +69,8 @@ export default function BarchartDiagram() {
   ]
 
   return (
-    <div className='h-[21rem] flex flex-col gap-1'>
-      <ResponsiveContainer width="100%" height="100%">
+    <div className='h-fit flex flex-col gap-2'>
+      <ResponsiveContainer width="100%" height={203.37}>
         <BarChart
           width={500}
           height={300}

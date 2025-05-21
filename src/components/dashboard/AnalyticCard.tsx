@@ -63,7 +63,7 @@ export default function AnalyticCard() {
       <div className="grid grid-cols-1 md:grid-cols-2 transition-all duration-300 lg:grid-cols-3 xl:grid-cols-4 gap-2.5">
         {
           AnalyticsData.map((item, index) => (
-            <div key={index} className="flex flex-col gap-2.5 cursor-pointer rounded-lg shadow-sm transition-all duration-300 p-3 px-2 w-full hover:bg-[#F6F6F6] bg-[#FFFFFF] border border-[#E2E2E2]">
+            <div key={index} className="flex flex-col gap-2.5 cursor-pointer rounded-lg shadow-sm transition-all duration-300 p-3 px-2 w-full hover:bg-[#F9F9F9] hover:scale-[1.02] bg-[#FFFFFF] border border-[#E2E2E2]">
 
               <div className='flex flex-col gap-1'>
                 <CardSVGs type={item.IconName} className='h-6 w-6 flex-none' />

@@ -6,3 +6,5 @@ type CardStatusProps = {
   quantity: number,
   status: Status,
 }
+
+type Theme = 'dark' | 'light';

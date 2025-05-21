@@ -28,7 +28,7 @@ export default function QuickAccess() {
       <div className="grid grid-cols-1 md:grid-cols-2 transition-all duration-300 lg:grid-cols-3 xl:grid-cols-4 gap-2">
         {
           QuickAccessData.map((item, index) => (
-            <div key={index} className="flex items-center gap-2.5 cursor-pointer rounded-lg transition-all duration-300 p-3 w-full hover:bg-[#F6F6F6] bg-[#F1F7FF]">
+            <div key={index} className="flex items-center gap-2.5 cursor-pointer rounded-lg transition-all duration-300 p-3 w-full hover:bg-[#F6F6F6] hover:scale-[1.02] bg-[#F1F7FF]">
               <CardSVGs type={item.IconName} className='h-7 w-7 flex-none' />
               <span className='text-sm whitespace-nowrap'>{item.name}</span>
               <CardSVGs type="Arrow" />

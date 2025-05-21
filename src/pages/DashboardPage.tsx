@@ -17,14 +17,14 @@ const DashboardPage: React.FC = () => {
   return (
     <Layout>
       <section className="w-full h-full flex flex-col px-5 p-1 pb10 gap-3">
-        
-        <div className='relative flex items-center flex-wrap max-md:gap-y-2 max-md:h-20 max-md:items-start w-full justify-between'>
-          <UserInfo 
+
+        <div className='relative flex items-center flex-wrap gap-y-2 max-md:h-20 max-md:items-start w-full justify-between'>
+          <UserInfo
             name='Oluwatobi'
-            lastLogin={helper.formatTime(new Date().toISOString())} 
+            lastLogin={helper.formatTime(new Date().toISOString())}
           />
 
-          <div className='ml-8 max-md:absolute right-2 bottom-0 border border-[#D0D5DD] text-xs rounded-md p-2 flex gap-2 items-center'>
+          <div className='ml8 max-md:absolute right-2 bottom-0 border border-[#D0D5DD] text-xs rounded-md p-2 flex gap-2 items-center'>
             <div className='flex items-center gap-1'>
               <SVGIcon type="Calendar" />
               <span className='text-[#121212]'>Today</span>
@@ -41,11 +41,11 @@ const DashboardPage: React.FC = () => {
         <AnalyticCard />
 
         {/* <div className='flex itemss-center flex-wrap gap-4 transition-all duration-300'> */}
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 transition-all duration-300'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-3 transition-all duration-300'>
           <MonthlyIssuance />
-          
+
           <RecentCardRequests />
-          
+
           <WeeklyIncome />
 
           <CardStatusDistribution />

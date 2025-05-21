@@ -20,6 +20,7 @@ export default function PieChartDiagram() {
 
   return (
     <div className='flex flex-col relative justify-center items-center'>
+
       <PieChart width={280} margin={{ top: -120, left: 40 }} height={180}>
         <Pie
           data={CardDistributionData}

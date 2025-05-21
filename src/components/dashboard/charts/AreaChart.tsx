@@ -48,8 +48,8 @@ export default function AreaChartDiagram() {
     },
   ];
   return (
-    <div className='h-[20rem]'>
-      <ResponsiveContainer width={'100%'}>
+    <div className='h-fit'>
+      <ResponsiveContainer width={'100%'} height={203}>
         <AreaChart width={730} height={250} data={data}
           margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
           <XAxis dataKey="name" tickLine={false} tickMargin={5} width={20} stroke='#FF' fontSize={13} />
