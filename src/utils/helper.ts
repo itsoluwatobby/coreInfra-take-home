@@ -1,16 +1,5 @@
 
 class Helper {
-  public reduceTextLength(content: string, maxLength=20, option:('letter'|'word')='letter') {
-    let responseOutput = '';
-    if(option === 'letter'){
-      responseOutput = content?.length > maxLength ? content?.substring(0, maxLength) +'...' : content
-    }
-    else if(option === 'word'){
-      responseOutput = content?.split(' ')?.length > maxLength ? content?.substring(0, maxLength * 4) +'...' : content
-    }
-    return responseOutput
-  }
-
   public checkCount<T>(content: T[] | T): string {
     let count = ''; 
     const length = Array.isArray(content) ? content?.length : content as number;
@@ -30,10 +19,10 @@ class Helper {
     return count
   }
 
-  public getFirstLetters(name = 'N O') {
-    const [firstName, lastName] = name.split(' ');
-    return `${firstName[0].toUpperCase()}${lastName[0].toLowerCase()}`;
-  }
+  formatDate = (date: Date) => {
+    const options = { day: '2-digit', month: 'short', year: 'numeric' } as const;
+    return date.toLocaleDateString('en-GB', options).replace(/ /g, ' ');
+  };
 
   public formatTime(date: string) {
     const options: Intl.DateTimeFormatOptions = {

@@ -8,9 +8,9 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="flex min-h-screen w-full">
+    <div className="flex 2xl:max-w-[1440px] xl:mx-auto min-h-screen w-full">
       <Sidebar />
-      <main className="flex-grow bg-gradient-to-b from-[#f7f9fd] to-white">
+      <main className="flex-grow bg-gradient-to-b from-[#f7f9fd] wfull to-white">
         <Header />
         {children}
       </main>

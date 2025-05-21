@@ -5,14 +5,13 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from 'recharts';
 
 export default function BarchartDiagram() {
 
 
-const data = [
+  const data = [
     {
       name: 'May',
       Instant: 55,
@@ -63,8 +62,13 @@ const data = [
     },
   ];
 
+  const IssuanceLegend = [
+    { name: 'Personalized', fill: 'bg-[#014DAF]' },
+    { name: 'Instant', fill: 'bg-[#CCE2FF]' },
+  ]
+
   return (
-    <div className='h-[20rem]'>
+    <div className='h-[21rem] flex flex-col gap-1'>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           width={500}
@@ -78,15 +82,30 @@ const data = [
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 0" vertical={false} />
-          <XAxis dataKey="name" tickLine={false} />
-          <YAxis tickLine={false} axisLine={false} />
+          <CartesianGrid strokeDasharray="3 0" vertical={false} stroke='#F2F4F7' />
+          <XAxis dataKey="name" tickLine={false} stroke='#FF' fontSize={13} color='red' />
+          <YAxis tickLine={false} axisLine={false} fontSize={13} />
           <Tooltip />
-          <Legend color='#808080' />
-          <Bar dataKey="Personalized" radius={[10, 10, 0, 0]} legendType='circle' stackId="a" fill="#014DAF" />
-          <Bar dataKey="Instant" radius={[10, 10, 0, 0]} legendType='circle' stackId="a" fill="#CCE2FF" />
+          <Bar dataKey="Personalized" radius={[0, 0, 0, 0]} stackId="a" fill="#014DAF" />
+          <Bar dataKey="Instant" radius={[10, 10, 0, 0]} stackId="a" fill="#CCE2FF" />
         </BarChart>
       </ResponsiveContainer>
+
+      <div className='h-[1px] w-full bg-[#E2E2E2]' />
+
+      <div className='self-center flex items-center gap-4'>
+        {
+          IssuanceLegend.map((issuance) => (
+            <div
+              key={issuance.fill}
+              className='flex cursor-default items-center gap-1'
+            >
+              <span className={`${issuance.fill} w-2 h-2 rounded-full`}></span>
+              <span className='text-[#808080] text-xs'>{issuance.name}</span>
+            </div>
+          ))
+        }
+      </div>
     </div>
   )
 }

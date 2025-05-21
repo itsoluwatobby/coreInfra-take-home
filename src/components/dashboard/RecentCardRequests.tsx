@@ -32,7 +32,7 @@ export default function RecentCardRequests() {
   const tableClass = 'p-4 max-md:px-2 text-center text-xs';
 
   return (
-    <div className="flex flex-col gap-4 border border-[#E2E2E2] bg-white rounded-lg p-3 shadow-sm">
+    <div className="flex flex-col gap-4 border border-[#E2E2E2] bg-white rounded-lg p-3 shadow-sm h-fit">
       <h4 className="text-lg text-[#121212] font-medium">Recent Card Requests</h4>
 
       <table className="border-collapse border border-x-0 broder-[#E2E2E2]">

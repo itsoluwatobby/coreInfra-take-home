@@ -52,9 +52,9 @@ export default function AreaChartDiagram() {
       <ResponsiveContainer width={'100%'}>
         <AreaChart width={730} height={250} data={data}
           margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-          <XAxis dataKey="name" tickLine={false} tickMargin={5} width={20} />
-          <YAxis dataKey="income" tickLine={false} axisLine={false} />
-          <CartesianGrid strokeDasharray="3 0" vertical={false} />
+          <XAxis dataKey="name" tickLine={false} tickMargin={5} width={20} stroke='#FF' fontSize={13} />
+          <YAxis dataKey="income" tickLine={false} axisLine={false} fontSize={13} />
+          <CartesianGrid strokeDasharray="3 0" vertical={false} stroke='#F2F4F7' />
           <Tooltip />
           <Area type="bumpX" dataKey="income" stroke="#4DAF01" fillOpacity={10} fill="url(#colorIncome)" />
         </AreaChart>

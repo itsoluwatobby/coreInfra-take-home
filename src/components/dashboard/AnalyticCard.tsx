@@ -55,7 +55,10 @@ export default function AnalyticCard() {
   return (
     <div className="flex flex-col gap-2.5 w-full">
 
-      <span className="font-bold text-lg">Analytics</span>
+      <div className="flex items-center w-full gap-2">
+        <span className="font-bold text-lg">Analytics</span>
+        <div className="h-[1px] w-full bg-[#D0D5DD]" />
+      </div>
  
       <div className="grid grid-cols-1 md:grid-cols-2 transition-all duration-300 lg:grid-cols-3 xl:grid-cols-4 gap-2.5">
         {
