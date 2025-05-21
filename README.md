@@ -5,7 +5,7 @@
 * Tools: **reactjs**, **rechart**, **tailwindcss**
 
 > PREVIEW
-![Dasboard preview](./images/dashboard-take-home.png)
+![Dasboard preview](./public/images/dashboard-take-home.png)
 
 
 [Figma Link](https://www.figma.com/design/kxTFknUuQ1J0xiMZKoFmiQ/LAPO-Web-App?node-id=112-6146&t=XjdPr7xMtReqNMRc-0)
