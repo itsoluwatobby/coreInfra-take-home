@@ -66,7 +66,7 @@ export default function AnalyticCard() {
             <div key={index} className="flex flex-col gap-2.5 cursor-pointer rounded-lg shadow-sm transition-all duration-300 p-3 px-2 w-full hover:bg-[#F9F9F9] hover:scale-[1.02] bg-[#FFFFFF] border border-[#E2E2E2]">
 
               <div className='flex flex-col gap-1'>
-                <CardSVGs type={item.IconName} className='h-6 w-6 flex-none' />
+                <CardSVGs type={item.IconName} className='h-5 w-5 flex-none' />
                 <span className='text-sm whitespace-nowrap opacity-60'>{item.name}</span>
               </div>
               

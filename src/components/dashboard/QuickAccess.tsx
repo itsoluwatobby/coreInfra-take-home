@@ -23,7 +23,7 @@ export default function QuickAccess() {
 
   return (
     <div className="flex flex-col gap-2 border border-[#E2E2E2] bg-white rounded-lg p-2 px-4 shadow-sm w-full">
-      <span>Your Quick Access</span>
+      <span className="text-base">Your Quick Access</span>
 
       <div className="grid grid-cols-1 md:grid-cols-2 transition-all duration-300 lg:grid-cols-3 xl:grid-cols-4 gap-2">
         {

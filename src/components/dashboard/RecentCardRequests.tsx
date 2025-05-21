@@ -29,7 +29,7 @@ export default function RecentCardRequests() {
   ]
 
   const TableHeader = ['Branch', 'Card Type', 'Quantity', 'Status', 'Action'];
-  const tableClass = 'p-4 py-3 lg:px-1 max-lg:px-1 max-sm:px-2 text-center text-xs';
+  const tableClass = 'p-4 pt-3 pb-2 lg:px-1 max-lg:px-1 max-sm:px-2 text-center text-[11px]';
 
   return (
     <div className="flex flex-col gap-4 border border-[#E2E2E2] bg-white rounded-lg p-3 shadow-sm h-fit">
@@ -41,7 +41,7 @@ export default function RecentCardRequests() {
             {
               TableHeader.map((header) => (
                 <th key={header}
-                className="text-opacity-[56.08%] p-4 py-3 lg:px-1 max-lg:px-1 max-sm:px-2 font-medium text-[13px]"
+                className="text-opacity-[56.08%] p-4 py-3 lg:px-1 max-lg:px-1 max-sm:px-2 font-medium text-[12px]"
                 >
                   {header}
                 </th>
@@ -65,7 +65,7 @@ export default function RecentCardRequests() {
                       {body.status}
                     </span>
                   </td>
-                  <td className='p-4 hover:scale-[1.05] active:scale-[1] cursor-pointer text-[#014DAF] text-xs'>View</td>
+                  <td className='p-4 hover:scale-[1.05] active:scale-[1] cursor-pointer text-[#014DAF] text-[11px] text-center'>View</td>
                 </tr>
               ))
             }

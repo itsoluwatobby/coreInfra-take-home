@@ -29,6 +29,7 @@ export default function PieChartDiagram() {
           innerRadius={72}
           outerRadius={81}
           fill="#8884d8"
+          strokeLinecap='round'
           paddingAngle={1}
           dataKey="value"
         >
@@ -38,7 +39,7 @@ export default function PieChartDiagram() {
         </Pie>
       </PieChart>
 
-      <div className='absolute flex flex-col items-center left-[47%] top-14'>
+      <div className='absolute flex cursor-default flex-col items-center left-[47%] top-14'>
         <span className='text-[#808080] text-xs'>Total Cards</span>
         <span className='text-[#121212] text-2xl font-medium'>2,450</span>
       </div>

@@ -24,7 +24,7 @@ const DashboardPage: React.FC = () => {
             lastLogin={helper.formatTime(new Date().toISOString())}
           />
 
-          <div className='ml8 max-md:absolute right-2 bottom-0 border border-[#D0D5DD] text-xs rounded-md p-2 flex gap-2 items-center'>
+          <div className='max-md:absolute right-2 bottom-0 border border-[#D0D5DD] text-[11px] rounded-md p-2 flex gap-2 items-center'>
             <div className='flex items-center gap-1'>
               <SVGIcon type="Calendar" />
               <span className='text-[#121212]'>Today</span>
@@ -40,7 +40,6 @@ const DashboardPage: React.FC = () => {
 
         <AnalyticCard />
 
-        {/* <div className='flex itemss-center flex-wrap gap-4 transition-all duration-300'> */}
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-3 transition-all duration-300'>
           <MonthlyIssuance />
 

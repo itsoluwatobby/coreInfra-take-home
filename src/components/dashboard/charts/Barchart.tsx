@@ -15,50 +15,50 @@ export default function BarchartDiagram() {
   const data = [
     {
       name: 'May',
-      Instant: 55,
-      Personalized: 10,
+      instant: 50,
+      personalized: 10,
       amt: 2400,
     },
     {
       name: 'Jun',
-      Instant: 70,
-      Personalized: 20,
+      instant: 70,
+      personalized: 20,
       amt: 2210,
     },
     {
       name: 'Jul',
-      Instant: 30,
-      Personalized: 5,
+      instant: 30,
+      personalized: 5,
       amt: 2290,
     },
     {
       name: 'Aug',
-      Instant: 60,
-      Personalized: 10,
+      instant: 60,
+      personalized: 10,
       amt: 2000,
     },
     {
-      name: 'Sept',
-      Instant: 60,
-      Personalized: 8,
+      name: 'Sep',
+      instant: 60,
+      personalized: 8,
       amt: 2181,
     },
     {
       name: 'Oct',
-      Instant: 50,
-      Personalized: 10,
+      instant: 40,
+      personalized: 10,
       amt: 2500,
     },
     {
       name: 'Nov',
-      Instant: 75,
-      Personalized: 20,
+      instant: 80,
+      personalized: 20,
       amt: 2100,
     },
     {
       name: 'Dec',
-      Instant: 70,
-      Personalized: 10,
+      instant: 80,
+      personalized: 10,
       amt: 2100,
     },
   ];
@@ -68,6 +68,13 @@ export default function BarchartDiagram() {
     { name: 'Instant', fill: 'bg-[#CCE2FF]' },
   ]
 
+  const instantMaxValue = Math.max(...data.map(d => d.instant));
+  const personalizedMaxValue = Math.max(...data.map(d => d.personalized));
+  
+  const maxValue = Math.max(instantMaxValue, personalizedMaxValue);
+  const tickMax = Math.ceil(maxValue / 20) * 20 + 20;
+  const ticks = Array.from({ length: tickMax / 20 + 1 }, (_, i) => i * 20).filter((v) => v <= 100);
+
   return (
     <div className='h-fit flex flex-col gap-2'>
       <ResponsiveContainer width="100%" height={203.37}>
@@ -75,7 +82,7 @@ export default function BarchartDiagram() {
           width={500}
           height={300}
           data={data}
-          // barGap={20}
+          barCategoryGap={'20%'}
           margin={{
             top: 10,
             right: 0,
@@ -84,11 +91,35 @@ export default function BarchartDiagram() {
           }}
         >
           <CartesianGrid strokeDasharray="3 0" vertical={false} stroke='#F2F4F7' />
-          <XAxis dataKey="name" tickLine={false} stroke='#FF' fontSize={13} />
-          <YAxis tickLine={false} axisLine={false} fontSize={13} />
-          <Tooltip />
-          <Bar dataKey="Personalized" radius={[0, 0, 0, 0]} stackId="a" fill="#014DAF" />
-          <Bar dataKey="Instant" radius={[10, 10, 0, 0]} stackId="a" fill="#CCE2FF" />
+          <XAxis 
+          dataKey="name" 
+          tickLine={false} 
+          stroke='#FF' 
+          fontSize={11.76}
+          fontWeight={400} 
+          tick={{ fill: '#667085' }}
+          className='text-[#667085]'
+          />
+          <YAxis 
+          tickLine={false} 
+          axisLine={false} 
+          ticks={ticks}
+          tick={{ fill: '#667085' }}
+          fontSize={11.76} 
+          />
+          <Tooltip cursor={false} />
+          <Bar 
+          dataKey="personalized" 
+          radius={[0, 0, 0, 0]} 
+          stackId="a" 
+          fill="#014DAF" 
+          />
+          <Bar 
+          dataKey="instant" 
+          radius={[10, 10, 0, 0]} 
+          stackId="a" 
+          fill="#CCE2FF" 
+          />
         </BarChart>
       </ResponsiveContainer>
 

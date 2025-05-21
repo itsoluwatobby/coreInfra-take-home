@@ -4,7 +4,8 @@ import TabButton from "../TabButton"
 
 export default function Sidebar() {
   return (
-    <aside className="hideScrollbar sticky top-0 md:w-[14.375rem] sm:w-[13rem] flex-none max-xxs:w-16 p-2 py-8 max-xxs:h-full h-screen border-r border-r-[#DEDEDF] flex flex-col gap-32 overflow-y-scroll">
+    <aside className="hideScrollbar sticky top-0 md:w-[14.375rem] sm:w-[13rem] flex-none max-xxs:w-16 p-2 py-8 max-xxs:h-full h-screen border-r border-r-[#DEDEDF] flex flex-col gap-28 overflow-y-scroll">
+
       <div className="flex flex-col gap-y-6">
     
         <AppLogo className="w-[8.64rem] h-[3rem] max-sm:hidden" />
